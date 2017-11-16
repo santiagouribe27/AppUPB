@@ -1,0 +1,15 @@
+//Inicializar el servidor node con todas las dependencias necesarias
+    -Hammer.js
+    -ScrollMagic
+    -Minify
+    -Grunt
+    Obfuscate
+
+
+Modificar la plantilla para tener los recursos comunes a todos los cuentos
+
+Crear secciones en el HTML para la administración de las vistas dinánicamente (Single Page)
+
+Crear el Gruntfile.js para automatizar tareas de creación de aplicación, minificado y ofuscación de archivos
+
+Importar librerías de Javascript que se pueden utilizar y empezar a probar.

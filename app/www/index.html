@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+    <title>¿Cuál es tu Cuento con el Fútbol?</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.min.css">
+
+
+    <!-- HTML5 shim and Respond.min.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.min.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <section id="loader">
+        <div id="bar"></div>
+        <img class="loader" src="img/loader.png">
+    </section>
+    <!-- End slider -->
+
+    <section id="manual" class="hidden">
+        <img class="img_manual" src="img/manual.png" usemap="manual">
+        <map name="manual">
+            <area class="map manual" alt="close" title="close" href="" coords="967,96,30" shape="circle">
+        </map>
+    </section>
+    <section id="swipeMenu" class="hidden">
+        <div id="dropUp">
+            <div class="row">
+                <img id="menu" src="img/dropUp.png" usemap="#dropUp">
+                <div name="dropUp" class="hidden">
+                    <button class="map musicOn On"  href=""></button>                        
+                    <button class="map musicOff Off"  href=""></button>
+                    <button class="map home"  href=""></button>
+                    <button class="map ayuda"  href=""></button>
+                    <button class="map album"  href=""></button>
+
+                   <!-- <img class="img lamina_menu_uno hidden" src="img/img_lamina.png" id="lamina_menu_1">
+                    <img class="img lamina_menu_dos hidden" src="img/img_lamina.png" id="lamina_menu_2">
+                    <img class="img lamina_menu_tres hidden" src="img/img_lamina.png" id="lamina_menu_3"> -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="swipeMenuCuento" class="hidden">
+            <div id="dropUpCuento">
+                <div class="row">
+                    <!-- <img id="menu" src="img/dropUp.png">
+                <a href="#team-members"><img src="img/img_home.png" class="img sobre_home"></a>
+                <a href="#seccion_manual"><img src="img/img_ayuda.png" class="img sobre_ayuda" id="img_ayuda"></a>
+                <a href="#our-clients"><img src="img/img_album.png" class="img sobre_album"></a>
+                <h3 class="titulo_menu">- CUENTO X - LÁMINAS -</h3>
+                <img class="img lamina_uno" src="img/img_lamina.png">
+                <img class="img lamina_dos" src="img/img_lamina.png">
+                <img class="img lamina_tres" src="img/img_lamina.png">
+                
+                 -->
+    
+                    <img id="menuCuento" src="img/Menu1.png" usemap="#dropUp">
+                <div name="dropUp" class="hidden">
+                    <button class="map musicOnCuento On"  href=""></button>                        
+                    <button class="map musicOffCuento Off"  href=""></button>
+                    <button class="map homeCuento "  href=""></button>
+                    <button class="map ayudaCuento"  href=""></button>
+                    <button class="map albumCuento"  href=""></button>
+                    
+                   <!-- <img class="img lamina_menu_uno hidden" src="img/img_lamina.png" id="lamina_menu_1">
+                    <img class="img lamina_menu_dos hidden" src="img/img_lamina.png" id="lamina_menu_2">
+                    <img class="img lamina_menu_tres hidden" src="img/img_lamina.png" id="lamina_menu_3"> -->
+
+                </div>
+    
+                    <div id="div_cuento1" class="hidden">
+                        <img class="img lamina_menu_uno " src="img/img_lamina.png" id="lamina_menu_1">
+                        <img class="img lamina_menu_dos " src="img/img_lamina.png" id="lamina_menu_2">
+                        <img class="img lamina_menu_tres " src="img/img_lamina.png" id="lamina_menu_3">
+                        <img class="img lamina_menu_cuatro " src="img/img_lamina.png" id="lamina_menu_4">
+                    </div>
+
+                    <div id="div_cuento2_cuento3" class="hidden">
+                        <img class="img lamina_m_uno " src="img/img_lamina.png" id="lamina_m_1">
+                        <img class="img lamina_m_dos " src="img/img_lamina.png" id="lamina_m_2">
+                        <img class="img lamina_m_tres " src="img/img_lamina.png" id="lamina_m_3">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    <section id="intro" class="intro animated">
+        <img class="logo-intro animated infinite pulse" src="img/logo.png">
+        <img class="bg" src="img/intro.png">
+    </section>
+    <!-- End slider -->
+
+    <section id="start" class="intro animated hidden">
+        <img class="lamina-intro animated fadeIn" src="img/lamina_especial.png">
+        <img class="bg" src="img/start.png">
+    </section>
+
+    <section id="seleccion-cuento" class="intro animated hidden">
+        <img id="intro_c3" class="opCuento lamina-intro animated slideInUp" src="img/intro_c3.png">
+        <img id="intro_c2" class="opCuento lamina-intro animated bounce" src="img/intro_c2.png">
+        <img id="intro_c1" class="opCuento lamina-intro animated slideInDown" src="img/intro_c1.png">
+        <img id="bg_seleccion" class="bg" src="img/seleccion_cuento.png">
+    </section>
+
+    <!--INVENTARIO-->
+        <section id="inv_1" class="inventario animated hidden">
+            <img id="LaminaAristizabal" class="primeraLamina hidden" src="img/cuento1/LaminaC1-02.png">
+            <img id="LaminaNacional" class="segundaLamina hidden" src="img/cuento1/LaminaC1-04.png">
+            <img id="LaminaBota" class="terceraLamina hidden" src="img/cuento1/LaminaC1-01.png">
+            <img class="bg" src="img/Inventario-01.png">
+        </section>
+        <section id="inv_2" class="inventario animated hidden">
+            <img id="LaminaRene" class="primeraLamina hidden" src="img/cuento3/LaminaC3-03.png">
+            <img id="LaminaMedellin" class="segundaLamina hidden" src="img/cuento3/LaminaC3-02.png">
+            <img id="LaminaLibertadores" class="terceraLamina hidden" src="img/cuento3/LaminaC3-01.png">
+            <img class="bg" src="img/Inventario-02.png">
+        </section>
+        <section id="inv_3" class="inventario animated hidden">
+            <img id="LaminaPibe" class="primeraLamina hidden" src="img/cuento2/LaminaC2-01.png">
+            <img id="LaminaColombia" class="segundaLamina hidden" src="img/cuento2/LaminaC2-02.png">
+            <img id="LaminaLiga" class="terceraLamina hidden" src="img/cuento2/LaminaC2-03.png">
+            <img class="bg" src="img/Inventario-03.png">
+        </section>
+        <section id="inv_4" class="inventario animated hidden">
+            <img id="LaminaMundo" class="hidden" src="img/cuento1/LaminaC1-03.png">
+            <img class="bg" src="img/Inventario-04.png">
+        </section>
+        <section id="inv_6" class="inventario animated hidden">
+            <img id="" src="img/Creditos.png">
+            <img class="bg" src="img/background.png">
+        </section>
+        <section id="inv_5" class="inventario animated hidden">
+            <img id="clickReset" src="img/clickIcon.png">
+            <img class="bg" src="img/background.png">
+        </section>
+
+
+
+
+    <!--CUENTO 1-->
+    <section id="c1_portadilla" class="cuento_1 animated slideInRight hidden">
+        <img class="bg" src="img/cuento1/Portadillas-C1.png">
+    </section>
+    <section id="c1_1" class="cuento_1 animated hidden">
+        <img src="img/clickIcon.png" id="timbre_c1">
+        <img class="puerta_c1" id="puertaAbierta_c1" src="img/cuento1/puerta_2.png">
+        <img class="puerta_c1" id="puertaCerrada_c1" src="img/cuento1/puerta_1.png">
+        <img id="arbustos_c1" src="img/cuento1/arbustos.png">
+        <img class="bg" src="img/cuento1/C1-01.png">
+    </section>
+    <section id="c1_2" class="cuento_1 animated hidden">
+        <img id="clickTv_c1" src="img/clickIcon.png">
+        <img class="hidden animated" id="lamina_1_c1" src="img/cuento1/LaminaC1-01.png">
+        <img class="mensaje_lamina_1 hidden" id="mensaje_lamina_1" src="img/Avisos-01.png" >        
+        <img class="bg" src="img/cuento1/C1-02.png">
+    </section>
+    <section id="c1_3" class="cuento_1 animated hidden">
+        <img class="bg" src="img/cuento1/C1-03.png">
+        <img class="boton_cocina" src="img/clickIcon.png" id="btn_cocina">
+    </section>
+    <section id="c1_4" class="cuento_1 animated hidden">
+        <img class="bg animated" src="img/cuento1/C1-04.png">
+    </section>
+    <section id="c1_5" class="cuento_1 animated hidden">
+    	<img class="fondoP5_c1" src="img/cuento1/pan_img.png" id="pan_c1">
+        <div class="fondoP5_c1" id="fondoP5_c1">
+        	<img src="img/cuento1/C1-05-bg.png">        		
+        	<img class="animated" id="lamina_2_c1" src="img/cuento1/LaminaC1-02.png">
+        	<img class="mensaje_lamina_dos hidden" id="mensaje_lamina_2" src="img/Avisos-01.png" > 
+        </div>
+        	<img class="bg" id="fondoPag5" src="img/cuento1/C1-05.png">
+    </section>
+
+    <section id="c1_6" class="cuento_1 animated hidden">
+        <img id="balonSound" class="bg" src="img/cuento1/C1-06.png">
+        <img src="img/cuento1/flecha.png" class="flecha" id="flecha">
+        <img src="img/cuento1/txt_06.png" class="img_cuadro_texto animated" id="texto_1">
+        <img src="img/cuento1/txt_06_2.png" class="img_cuadro_texto hidden animated" id="texto_2">
+    </section>
+
+    <section id="c1_7" class="cuento_1 animated hidden">
+        <img id="gif-vasos" src="img/cuento1/vasos.gif">
+        <img class="bg" src="img/cuento1/C1-07.png">
+    </section>
+
+    <section id="c1_8" class="cuento_1 animated hidden">
+        <img id="resp" class="bg" src="img/cuento1/C1-08.png">
+        <img src="img/cuento1/tv_1.png" class="img_tv" id="img_tv">
+        <img src="img/cuento1/balon.png" class="balon hidden" id="balon">
+        <img src="img/cuento1/LaminaC1-03.png" class="lamina_copa hidden animated" id="lamina_3_c1">
+        <img src="img/Avisos-01.png" class="mensaje_lamina_3 hidden" id="mensaje_lamina_3">
+    </section>
+    <section id="c1_9" class="cuento_1 animated hidden">
+    	<img class="marcadores" id="marcador8" src="img/cuento1/8.png">
+    	<img class="marcadores hidden" id="marcador9" src="img/cuento1/9.png">
+    	<img class="hidden" id="lamina_4_c1" src="img/cuento1/LaminaC1-04.png">
+    	<img src="img/cuento1/pan_img.png" id="swipeMarcador">
+    	<img src="img/Avisos-01.png" class="mensaje_lamina_3 hidden" id="mensaje_lamina_4">
+    	<img id="tablero-marcador" src="img/cuento1/marcador_8-1.png">
+    	<img id="marcador" src="img/cuento1/marcador.png">
+        <img class="bg" src="img/cuento1/C1-09.png">
+    </section>
+
+    <!-- CUENTO 2 -->
+    <!-- LAS SECCIONES DEBEN ESTAR EN EL ORDEN EN EL QUE EL CUENTO FLUYA, MUCHO CUIDADO
+    REVISAR LAS CLASES QUE SE USAN PARA QUE ADAPTEN LAS DE SUS CUENTOS -->
+    <section id="c2_portadilla" class="cuento_2 animated slideInRight hidden">
+        <img class="portadilla-titulo animated slideInUp" src="img/cuento2/Portadillas-C2_titulo.png">
+        <img class="bg" src="img/cuento2/Portadillas-C2.png">
+    </section>
+    <section id="c2_1" class="cuento_2 animated hidden">
+        <img class="bg" src="img/cuento2/C2-01.png">
+        <img id ="silbatoSound" class="tienda animated fadeInDown" src="img/cuento2/tienda.png">
+        <img id="target_1" class="target_1 animated slideInUp" src="img/clickIcon.png">
+        <img id="lamina_tapas" class="tapas hidden" src="img/cuento2/tapas.png">
+    </section>
+
+    <section id="c2_2" class="cuento_2 animated hidden">
+        <img id="target_2" class="target_2 animated slideInDown" src="img/clickIcon.png">
+        <img class="tienda animated slideInDown" src="img/cuento2/tienda_abierta.png">
+        <img id="cuadro" class="cuadro animated slideInDown" src="img/cuento2/cuadro.png">
+        <img id="lamina_pibe" class="pibe hidden" src="img/cuento2/LaminaC2-01.png">
+        <img id="success" class="success hidden" src="img/Avisos-01.png">
+        <img class="bg" src="img/cuento2/C2-02.png">
+    </section>
+
+    <section id="c2_3" class="cuento_2 animated hidden">
+        <!-- lista-->
+        <img class="bg" src="img/cuento2/C2-03.png">
+    </section>
+
+    <section id="C2_4" class="cuento_2 animated hidden">
+        <img id="btn_agregar2" class="agregar2 hidden" src="img/cuento2/agregar.png">
+        <img id="lamina_col" class="col hidden" src="img/cuento2/LaminaC2-02.png" alt="">
+        <img id="success_3" class="success_3 hidden" src="img/Avisos-01.png">
+        <img class="bg" src="img/cuento2/C2-04.png">
+		<img id="golSound" class="gol expand" src="img/cuento2/gol.png">
+        <img class="zoom_icono" src="img/expandIcon.png">
+    </section>
+
+    <section id="C2_5" class="cuento_2 animated hidden">
+        <!--lista-->
+        <img id="vientoSound" class="bg" src="img/cuento2/C2-05.png">
+    </section>
+
+    <section id="C2_6" class="cuento_2 animated hidden">
+        <img class="bg" src="img/cuento2/C2-06.png">
+        <img id="btn_agregar" class="agregar" src="img/cuento2/agregar.png">
+        <img id="lamina_copa" class="copa hidden" src="img/cuento2/LaminaC2-03.png">
+        <img id="success_2" class="success_2 hidden" src="img/Avisos-01.png">
+    </section>
+
+    <section id="C2_7" class="cuento_2 animated hidden">
+        <img class="bg" src="img/cuento2/C2-07.png">
+        <img class="texto7" src="img/cuento2/txt_07.png">
+        <img id="vaporSound" class="gif-plancha" src="img/cuento2/plancha.gif">
+    </section>
+
+    <!--CUENTO 3-->
+    <section id="cuento_3">
+        <section id="c3_portadilla" class="cuento_3 animated slideInRight hidden">
+            <img src="img/cuento3/c3_portadillaFondo.png">
+            <img id="portadilla" src="img/cuento3/c3_portadillaTitulo.png">
+        </section>
+        <section id="c3_1" class="cuento_3 animated hidden">
+            <img class="background" src="img/background.png">
+            <img class="pag" src="img/cuento3/pag1.png">
+            <img id="c3_txt1" src="img/cuento3/txt1.png">
+            <img id="c3_p1A" src="img/cuento3/c3_p1A.gif">
+        </section>
+        <section id="c3_2" class="cuento_3 animated hidden">
+            <img class="background" src="img/background.png">
+            <img class="pag" src="img/cuento3/pag2.png">
+            <img id="c3_p2A1" class="c3_p2m" src="img/cuento3/c3_p2A1.png">
+            <img id="btn_c3_p2" type="submit" src="img/clickIcon.png">
+            <img id="c3_p2A2" class="c3_p2m" src="img/cuento3/c3_p2A2.png" hidden>
+            <img id="c3_l1" src="img/cuento3/LaminaC3-01.png" hidden>
+            <img id="btn_c3_p2A" type="submit" src="img/cuento3/agregar.png" hidden>
+            <textarea id="c3_txt2" class="margen_textArea">Confieso que muchas veces me entrego sin reservas a algunos que no me merecen y disfruto como se acercan a mi con metales brillantes y buscan funsdirse conmigo en un abrazo como si en ello se fuera la vida. Me la paso de tribuna en tribuna, de cancha en cancha y alimento mi vanidad. Encuentro un adictivo placer en contonearme entre las piernas de los jugadores, en coquetear con los fervientes hinchas mientras ignoran que no me inclino por ningun color ni que me suele importar quien se esfuerza mas.</textarea>
+        </section>
+        <section id="c3_3" class="cuento_3 animated hidden">
+            <img class="background" src="img/background.png">
+            <img class="pag" src="img/cuento3/pag3.png">
+            <img id="c3_txt3" src="img/cuento3/txt3.png">
+            <img id="c3_p3A" src="img/cuento3/c3_p3A.png" class="animated flipInY">
+        </section>
+        <section id="c3_4" class="cuento_3 animated hidden">
+            <img class="background" src="img/background.png">
+            <img class="pag" src="img/cuento3/pag4.png">
+            <img id="c3_p4A" src="img/cuento3/c3_p4A.gif">
+            <img id="c3_txt4" src="img/cuento3/txt4.png">
+        </section>
+        <section id="c3_5" class="cuento_3 animated hidden">
+            <img class="background" src="img/background.png">
+            <img class="pag" src="img/cuento3/pag5.png">
+            <img id="c3_txt5" src="img/cuento3/txt5.png">
+            <img id="c3_p5A" class="animated flipInY" src="img/cuento3/c3_p5A.png">
+        </section>
+        <section id="c3_6" class="cuento_3 animated hidden">
+            <img class="background" src="img/background.png">
+            <img class="pag" src="img/cuento3/pag6.png">
+            <textarea id="c3_txt6" class="margen_textArea">La imagen de mi carrrera hacia los brazos de otro seria dificil de borrar. Ser cruel quizas tambien esta en mi lista de virtudes o defectos. En la cancha ganaron y lloraron los mismos. Soy la misma de esa noche, hoy le prometo al cielo a uno y termino durmiento con otro, y asi sere: impredecible pero siempre bella. No voy a dejar a un lado el palcer de dejarme conquistar en un estadio lleno de esplendor. A veces me seduce aparecerme en el potero y tomarme unos tragos con los obreros que se la juegan en las canchas intransitables.</textarea>
+            <img id="c3_p6A" src="img/cuento3/c3_p6A.png">
+            <img id="btn_c3_p6A" class="c3_p6btns" type="submit" src="img/clickIcon.png">
+            <img id="c3_l2" src="img/cuento3/LaminaC3-02.png" hidden>
+            <img id="btn_c3_p6B" class="c3_p6btns" type="submit" src="img/cuento3/agregar.png" hidden>
+            <img id="c3_p6B" src="img/cuento3/c3_p6B.png">
+        </section>
+        <section id="c3_7" class="cuento_3 animated hidden">
+            <img class="background" src="img/background.png">
+            <img class="pag" src="img/cuento3/pag7.png">
+            <img id="c3_txt7" src="img/cuento3/txt7.png">
+            <img id="c3_p7A" src="img/cuento3/c3_p7A.png">
+            <img id="c3_l3" src="img/cuento3/LaminaC3-03.png" hidden>
+            <img id="btn_c3_p7A" class="c3_p7btn" type="submit" src="img/cuento3/agregar.png" hidden>
+            <img id="c3_p7B" type="submit" src="img/cuento3/c3_p7B.png">
+        </section>
+    </section>
+
+    <!-- Hammer -->
+    <script src="js/hammer.min.js"></script>
+    <!--TweenLite -->
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/TweenLite.min.js"></script>
+    <script src="js/main.min.js"></script>
+<script type="text/javascript" src="cordova.js"></script><script type="text/javascript">app.initialize();</script></body>
+
+</html>
